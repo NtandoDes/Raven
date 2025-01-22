@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #333;
+  text-align: center;
+}
+
+.background-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-section {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.her-image {
+  width: 200px; /* Circular image size */
+  height: 200px; /* Matches width to maintain circle */
+  border-radius: 50%; /* Circular shape */
+  margin: 0 auto; /* Centers the image */
+  display: block; /* Block-level for better centering */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  object-fit: cover; /* Keeps image proportional within circle */
+}
+
+.main-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  margin-top: 20px;
+  color: #ffdd94;
+}
+
+.message-section, 
+.heartfelt-section, 
+.final-note {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message-section h2, 
+.heartfelt-section h2, 
+.final-note h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #ffd700;
+}
+
+.message-section p, 
+.heartfelt-section p, 
+.final-note p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.quote {
+  margin: 20px auto;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ffdd94;
+}
+
+.final-note {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border: 2px solid #ffd700;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-section, 
+.heartfelt-section, 
+.final-note {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden; /* Hide overflow to contain slides */
+  width: 80%; /* Adjust the width of the slideshow container */
+  margin: 0 auto; /* Center the slideshow horizontally */
+  max-width: 600px; /* Limit the maximum width */
+}
+
+.slides {
+  display: flex; /* Arrange slides horizontally */
+  transition: transform 2s ease; /* Smooth transition for sliding effect */
+}
+
+.slide {
+  flex: 0 0 100%; /* Each slide takes full width of the container */
+  max-height: 300px; /* Adjust the height of the images */
+  object-fit: cover; /* Ensure images maintain their aspect ratio */
+  border-radius: 15px; /* Add rounded corners */
+}
+
+.valentine-section {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 700px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.valentine-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.valentine-message {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.valentine-buttons {
+  margin: 20px 0;
+}
+
+.valentine-yes, .valentine-no {
+  background-color: #ff6f61;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.valentine-yes:hover, .valentine-no:hover {
+  transform: scale(1.1);
+}
+
+.valentine-yes {
+  background-color: #ff3b3b;
+}
+
+.valentine-no {
+  background-color: #555;
+}
+
+.valentine-response {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+footer {
+  margin-top: 30px;
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.music-controls {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.styled-play-button {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  border: 2px solid #ff6f61; /* Subtle border matching the website's theme */
+  border-radius: 50px;
+  color: #ff6f61; /* Romantic coral color */
+  font-size: 1.4rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.styled-play-button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  background-color: #ff6f61; /* Background changes to coral on hover */
+  color: white; /* Text color changes to white */
+}
+
+.styled-play-button:active {
+  transform: translateY(2px); /* Press-down effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
